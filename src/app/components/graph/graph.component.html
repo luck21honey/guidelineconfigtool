@@ -1,0 +1,7 @@
+<div class="graph-block" width="2000" height="2000" #svg [hidden]="showEditor"  ></div>
+<div class="tooltop"> Please select a destination textbox</div>
+
+<ng-container *ngIf="showEditor">
+    <app-create-starting-points [nodeId]="currentNode.id"></app-create-starting-points>
+    <app-text-editor [left]="left" [top]="top" [currentNode]="currentNode" (cancel)="toggleTextEditor()"></app-text-editor>
+</ng-container>

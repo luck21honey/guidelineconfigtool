@@ -1,0 +1,31 @@
+@import '../../../variables';
+
+.file-management {
+  padding: 1rem;
+  width: 90%;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    h2 {
+      font-size: $large-font;
+      line-height: $line-height-md;
+      letter-spacing: $letter-spacing-sm;
+      color: $dark-text;
+      margin: 0 !important;
+    }
+  }
+}
+
+.link {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.25px;
+  color: #0066cc;
+}

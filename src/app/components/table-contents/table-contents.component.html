@@ -1,0 +1,13 @@
+<div class="table-contents">
+  <div class="table-contents__edit">
+    <button [matMenuTriggerFor]="editMenu" mat-icon-button aria-label="Edit Table of Contents">
+      <img src="../../../assets/ellipses.svg" />
+    </button>
+    <mat-menu #editMenu="matMenu">
+      <button mat-menu-item (click)="close()">Close</button>
+      <button *ngIf="!isPreviewMode" mat-menu-item (click)="toggleEditMode()" [ngClass]="{'table-contents__edit-blue': isEditMode}">Edit</button>
+    </mat-menu>
+  </div>
+  <p class="table-contents__title">Table of Contents</p>
+  <app-table-contents-list [isEditMode]="isEditMode" [data]="startingPoints$ | async" sectionTitle="Starting points"></app-table-contents-list>
+</div>

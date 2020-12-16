@@ -1,0 +1,12 @@
+
+<app-navbar
+  (addAppendix)="addAppendixHandler()"
+  (preview)="previewHandler()"
+  (toggleSidenav)="toggleSidenavHandler()"
+  [guidelineType]="guidelineType"
+>
+</app-navbar>
+<app-sidebar [isOpen]="isOpen" [isPreviewMode]="isPreviewMode" [guidelineId]="guidelineId" [nodeMap]="nodeMap$ | async"></app-sidebar>
+
+
+

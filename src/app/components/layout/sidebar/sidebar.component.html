@@ -1,0 +1,8 @@
+<mat-sidenav-container class="sidenav">
+  <app-graph [isPreviewMode]="isPreviewMode" [guidelineId]="guidelineId" [nodeMap]="nodeMap" [startingPointNodeIds]="startingPointNodeIds$ | async"></app-graph>
+  <mat-sidenav #drawer mode="side" position="end" opened="isOpen">
+    <div fxLayout="column" class="sidenav__content">
+      <app-table-contents [isPreviewMode]="isPreviewMode" (closeEvent)="closeHandler()"></app-table-contents>
+    </div>
+  </mat-sidenav>
+</mat-sidenav-container>

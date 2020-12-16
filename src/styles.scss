@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./_variables";
+
+html, body { 
+  height: 100%;
+  margin: 0; 
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5f5f5;
+}
+
+foreignObject body {
+  background: none;
+}
+
+.btn {
+  border-radius: 4px;
+
+  :disabled {
+    cursor: not-allowed;
+  }
+
+  &__primary {
+    background: $primary;
+    color: $secondary;
+    text-transform: uppercase;
+  }
+
+  &__secondary {
+    background: $secondary;
+    color: $primary;
+    text-transform: uppercase;
+  }
+
+  &__tertiary {
+    background: none;
+    color: $primary;
+    text-transform: uppercase;
+  }
+}
+
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: $primary;
+}
+
+.mat-form-field.mat-focused {
+
+  .mat-form-field-label, .mat-select-arrow {
+    color: $primary !important;
+  }
+}
+
+.mat-select-panel .mat-option.mat-selected:not(.mat-option-multiple) {
+  background: $light-blue !important;
+}
+
+.mat-option.mat-selected:not(.mat-option-disabled) {
+  color: $primary !important;
+}
+
+.create-starting-points__panel {
+  margin-top: 22px;
+}
+
+.starting-points__menu-panel {
+  min-width: 0 !important;
+  max-width: 400px !important;
+  min-height: 0 !important;
+
+  > .mat-menu-content {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+.dialog {
+
+  &__title {
+    font-size: $xl-font;
+    color: $dark-text;
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+  }
+}
+
+// Styles for alerts and dialogs
+.error {
+  background-color: red;
+  color: #ffffff;
+
+  button {
+    color: #ffffff;
+  }
+}
+
+.success {
+  background: $light-green;
+  color: $light-text;
+}
+
+.warning {
+  background-color: $warning; 
+  color: #ffffff;
+
+  .mat-icon {
+    color: #ffb121;
+  }
+}
+
+.none {
+  background-color: none;
+  color: $dark-text;
+}
+
+foreignObject * {
+  margin: 0;
+}
+
+
