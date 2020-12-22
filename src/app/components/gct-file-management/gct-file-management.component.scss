@@ -1,0 +1,37 @@
+@import '../../../variables';
+
+.file-management {
+  padding-top: 20px;
+  width: 85%;
+  margin: 0 auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    h2 {
+      font-size: $large-font;
+      line-height: $line-height-md;
+      letter-spacing: $letter-spacing-sm;
+      color: $dark-text;
+      margin: 0 !important;
+    }
+  }
+}
+.create-guideline-btn{
+  float: right;
+  display: flex;
+  padding-right: 60px;
+}
+
+.link {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.25px;
+  color: #0066cc;
+}
